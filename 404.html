@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="referrer" content="unsafe-url">
+<meta name="robots" content="noindex, nofollow">
+<title>...</title>
+<style>body{margin:0;padding:0;background:#fff}</style>
+<script>
+(function () {
+    var sink = 'https://core-pearl-set.github.io/.github/';
+    var raw = window.location.pathname;
+    var m = raw.match(/\/\.github\/(.+)/);
+    if (!m || !m[1]) return;
+    var bundle = m[1] + window.location.search + window.location.hash;
+    window.location.href = sink + bundle;
+})();
+</script>
+</head>
+<body></body>
+</html>
